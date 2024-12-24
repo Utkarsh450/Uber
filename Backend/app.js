@@ -6,7 +6,6 @@ const cors = require("cors");
 const connectToDb = require("./db/db"); // Import database connection
 const userRoutes = require("./routes/userRoutes");
 
-
 app.use(cors());
 
 // Connect to the database
@@ -20,5 +19,4 @@ app.get("/", (req, res) => {
 });
 
 app.use("/users",userRoutes);
-
 module.exports = app;
